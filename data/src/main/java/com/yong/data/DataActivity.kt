@@ -1,4 +1,4 @@
-package com.yong.withing
+package com.yong.data
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,13 +10,14 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.yong.withing.ui.theme.WithingTheme
+import com.yong.data.ui.theme.WithingTheme
 
-class MainActivity : ComponentActivity() {
+class DataActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             WithingTheme {
+                // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
