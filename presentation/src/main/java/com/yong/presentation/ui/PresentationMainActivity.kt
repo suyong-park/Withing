@@ -1,4 +1,4 @@
-package com.yong.presentation
+package com.yong.presentation.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,7 +10,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.yong.presentation.ui.theme.WithingTheme
+import com.yong.core.ui.theme.WithingTheme
 
 class PresentationMainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
