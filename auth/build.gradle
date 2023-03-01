@@ -1,16 +1,15 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
     id 'dagger.hilt.android.plugin'
     id 'kotlin-kapt'
 }
 
 android {
-    namespace 'com.yong.withing'
+    namespace 'com.yong.auth'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.yong.withing"
         minSdk 24
         targetSdk 33
         versionCode 1
@@ -50,7 +49,7 @@ android {
 
 dependencies {
 
-    implementation project(':auth')
+    implementation project(':core')
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.5.1'
